@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sống Xanh — Lối sống bền vững mỗi ngày</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: { sans: ['"Be Vietnam Pro"','system-ui','sans-serif'] } } } }
+</script>
+<link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="bg-surface text-ink font-sans">
+
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:bg-primary focus:text-on-primary focus:px-4 focus:py-2 focus:rounded-md">Bỏ qua để đến nội dung chính</a>
+
+<header class="site-header bg-surface border-b border-base">
+  <div class="max-w-5xl mx-auto px-5 py-4 flex flex-wrap items-center justify-between gap-4">
+    <a href="#/" class="text-2xl font-bold text-primary">🌿 Sống Xanh</a>
+    <nav aria-label="Điều hướng chính" class="flex flex-wrap gap-x-2 text-base font-medium">
+      <a href="#/" class="nav-link px-2 py-2">Trang chủ</a>
+      <a href="#/meo" class="nav-link px-2 py-2">Mẹo sống xanh</a>
+      <a href="#/hotro" class="nav-link px-2 py-2">Hỗ trợ khách hàng</a>
+    </nav>
+    <div class="flex gap-3">
+      <a href="#/dangnhap" class="border-2 border-primary text-primary font-semibold px-5 py-3 rounded-md">Đăng nhập</a>
+      <a href="#/dangky" class="bg-primary text-on-primary font-semibold px-5 py-3 rounded-md">Đăng ký</a>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section data-page="#/">
+    <div class="max-w-5xl mx-auto px-5 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-5">Sống xanh mỗi ngày — những bước nhỏ, thay đổi lớn</h1>
+        <p class="text-lg text-ink-soft mb-8 max-w-md">Những thói quen đơn giản, dễ bắt đầu, giúp bạn giảm rác thải, tiết kiệm chi phí và sống gần gũi với thiên nhiên hơn.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#/meo" class="bg-primary text-on-primary font-semibold text-lg px-7 py-4 rounded-md">Xem mẹo sống xanh</a>
+          <a href="#/hotro" class="border-2 border-primary text-primary font-semibold text-lg px-7 py-4 rounded-md">Hỗ trợ khách hàng</a>
+        </div>
+      </div>
+      <div aria-hidden="true" class="flex justify-center">
+        <svg viewBox="0 0 300 260" width="280" height="240">
+          <circle cx="150" cy="150" r="90" style="fill:var(--bg-soft);stroke:var(--border)" stroke-width="2"/>
+          <g class="leaf">
+            <path d="M150 70c25 10 40 35 30 65-25 10-55 0-65-25-5-20 10-45 35-40z" style="fill:var(--primary)"/>
+            <path d="M150 75v55" style="stroke:var(--primary-dark)" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <g class="leaf" style="animation-delay:-2s">
+            <path d="M110 150c20 15 25 40 10 60-25 0-45-15-45-40 0-15 20-25 35-20z" style="fill:var(--accent)" opacity="0.85"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="bg-surface-soft border-y border-base">
+      <div class="max-w-5xl mx-auto px-5 py-14">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-8 reveal">Vì sao chọn lối sống xanh</h2>
+        <div class="grid sm:grid-cols-2 gap-x-10 gap-y-8">
+          <div class="feat-card reveal border border-base rounded-md p-5">
+            <h3 class="font-semibold text-lg mb-1">Giảm rác thải</h3>
+            <p class="text-ink-soft">Mỗi lựa chọn nhỏ hằng ngày giúp giảm bớt rác nhựa và túi ni-lông.</p>
+          </div>
+          <div class="feat-card reveal border border-base rounded-md p-5">
+            <h3 class="font-semibold text-lg mb-1">Tiết kiệm chi phí</h3>
+            <p class="text-ink-soft">Dùng đồ bền, tái sử dụng giúp tiết kiệm tiền về lâu dài.</p>
+          </div>
+          <div class="feat-card reveal border border-base rounded-md p-5">
+            <h3 class="font-semibold text-lg mb-1">Tốt cho sức khỏe</h3>
+            <p class="text-ink-soft">Ăn uống theo mùa, hạn chế hóa chất giúp cơ thể khỏe mạnh hơn.</p>
+          </div>
+          <div class="feat-card reveal border border-base rounded-md p-5">
+            <h3 class="font-semibold text-lg mb-1">Gắn kết cộng đồng</h3>
+            <p class="text-ink-soft">Chia sẻ thói quen xanh cùng gia đình, hàng xóm, bạn bè.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-5 py-16">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-8 reveal">Mẹo được xem nhiều</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="tip-card reveal border-l-4 border-primary bg-surface-soft p-6 rounded-r-md">
+          <h3 class="text-xl font-semibold mb-2">Mang túi vải khi mua sắm</h3>
+          <p class="text-ink-soft">Một chiếc túi vải có thể thay thế hàng trăm túi ni-lông mỗi năm.</p>
+        </article>
+        <article class="tip-card reveal border-l-4 border-primary bg-surface-soft p-6 rounded-r-md">
+          <h3 class="text-xl font-semibold mb-2">Trồng cây xanh trong nhà</h3>
+          <p class="text-ink-soft">Giúp không khí trong lành và không gian sống dễ chịu hơn.</p>
+        </article>
+        <article class="tip-card reveal border-l-4 border-primary bg-surface-soft p-6 rounded-r-md">
+          <h3 class="text-xl font-semibold mb-2">Tiết kiệm điện, nước</h3>
+          <p class="text-ink-soft">Tắt thiết bị khi không dùng — nhỏ nhưng cộng dồn hiệu quả lớn.</p>
+        </article>
+      </div>
+      <div class="text-center mt-10">
+        <a href="#/meo" class="text-primary font-semibold text-lg">Xem tất cả mẹo sống xanh</a>
+      </div>
+    </div>
+  </section>
+
+  <section data-page="#/meo" hidden>
+    <div class="max-w-5xl mx-auto px-5 py-16">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 reveal">Mẹo sống xanh mỗi ngày</h1>
+      <p class="text-lg text-ink-soft mb-10 max-w-2xl reveal">Không cần thay đổi lớn — chỉ cần bắt đầu từ những việc nhỏ, dễ làm sau đây.</p>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <article class="tip-card reveal border border-base rounded-md p-6">
+          <h3 class="text-xl font-semibold mb-2">1. Mang túi vải khi mua sắm</h3>
+          <p class="text-ink-soft">Để sẵn một túi vải trong cặp hoặc xe để không quên mỗi khi ra ngoài.</p>
+        </article>
+        <article class="tip-card reveal border border-base rounded-md p-6">
+          <h3 class="text-xl font-semibold mb-2">2. Hạn chế đồ nhựa dùng một lần</h3>
+          <p class="text-ink-soft">Dùng bình nước, hộp cơm cá nhân thay vì ly, hộp nhựa dùng một lần.</p>
+        </article>
+        <article class="tip-card reveal border border-base rounded-md p-6">
+          <h3 class="text-xl font-semibold mb-2">3. Trồng cây xanh trong nhà</h3>
+          <p class="text-ink-soft">Bắt đầu với một vài chậu cây dễ chăm như nha đam, trầu bà.</p>
+        </article>
+        <article class="tip-card reveal border border-base rounded-md p-6">
+          <h3 class="text-xl font-semibold mb-2">4. Tiết kiệm điện, nước</h3>
+          <p class="text-ink-soft">Tắt đèn, rút phích cắm khi không dùng; sửa ngay vòi nước bị rò rỉ.</p>
+        </article>
+        <article class="tip-card reveal border border-base rounded-md p-6">
+          <h3 class="text-xl font-semibold mb-2">5. Tái chế đúng cách</h3>
+          <p class="text-ink-soft">Phân loại rác tại nhà: giấy, nhựa, kim loại riêng để dễ tái chế.</p>
+        </article>
+        <article class="tip-card reveal border border-base rounded-md p-6">
+          <h3 class="text-xl font-semibold mb-2">6. Ưu tiên thực phẩm theo mùa</h3>
+          <p class="text-ink-soft">Rau củ theo mùa, mua ở chợ gần nhà vừa tươi ngon vừa giảm vận chuyển xa.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section data-page="#/hotro" hidden>
+    <div class="max-w-5xl mx-auto px-5 py-16">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 reveal">Hỗ trợ khách hàng</h1>
+      <p class="text-lg text-ink-soft mb-10 max-w-2xl reveal">Câu hỏi thường gặp, hoặc gửi liên hệ trực tiếp cho chúng tôi bên dưới.</p>
+
+      <div class="max-w-2xl mb-14 reveal">
+        <details class="py-4 border-b border-base">
+          <summary class="text-lg font-medium">Tôi quên mật khẩu, phải làm sao?</summary>
+          <p class="text-ink-soft mt-2">Gọi hotline 1900 1234, nhân viên sẽ hỗ trợ đặt lại mật khẩu ngay trong vài phút.</p>
+        </details>
+        <details class="py-4 border-b border-base">
+          <summary class="text-lg font-medium">Làm sao liên hệ hỗ trợ nhanh nhất?</summary>
+          <p class="text-ink-soft mt-2">Gọi trực tiếp hotline bên dưới — luôn có người thật nghe máy trong giờ hỗ trợ.</p>
+        </details>
+        <details class="py-4 border-b border-base">
+          <summary class="text-lg font-medium">Thông tin đăng ký của tôi có được bảo mật không?</summary>
+          <p class="text-ink-soft mt-2">Có. Thông tin cá nhân được mã hóa và không chia sẻ cho bên thứ ba.</p>
+        </details>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="reveal">
+          <h2 class="text-2xl font-semibold mb-4">Thông tin liên hệ</h2>
+          <p class="text-ink-soft mb-1">Email: <a href="mailto:[email protected]" class="text-primary font-semibold">[email protected]</a></p>
+          <p class="text-ink-soft mb-1">Hotline: <a href="tel:19001234" class="text-primary font-semibold">1900 1234</a></p>
+          <p class="text-ink-soft">Giờ hỗ trợ: 8:00 – 20:00, tất cả các ngày</p>
+        </div>
+        <form id="contact-form" class="reveal space-y-4" novalidate>
+          <div>
+            <label for="hoten" class="block font-medium mb-1">Họ tên</label>
+            <input id="hoten" name="hoten" type="text" required class="w-full border border-base rounded-md px-4 py-3 text-base bg-surface" />
+          </div>
+          <div>
+            <label for="c-email" class="block font-medium mb-1">Email</label>
+            <input id="c-email" name="email" type="email" required class="w-full border border-base rounded-md px-4 py-3 text-base bg-surface" />
+          </div>
+          <div>
+            <label for="noidung" class="block font-medium mb-1">Nội dung</label>
+            <textarea id="noidung" name="noidung" rows="4" required class="w-full border border-base rounded-md px-4 py-3 text-base bg-surface"></textarea>
+          </div>
+          <button type="submit" class="bg-primary text-on-primary font-semibold text-lg px-7 py-4 rounded-md">Gửi liên hệ</button>
+          <p id="form-msg" class="text-primary font-medium" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section data-page="#/dangnhap" hidden>
+    <div class="max-w-md mx-auto px-5 py-16">
+      <h1 class="text-3xl font-bold mb-2 reveal">Đăng nhập</h1>
+      <p class="text-ink-soft mb-8 reveal">Chào mừng bạn quay lại Sống Xanh.</p>
+      <form id="login-form" class="reveal space-y-4" novalidate>
+        <div>
+          <label for="login-email" class="block font-medium mb-1">Email</label>
+          <input id="login-email" name="email" type="email" required class="w-full border border-base rounded-md px-4 py-3 text-base bg-surface" placeholder="[email protected]" />
+        </div>
+        <div>
+          <label for="login-pw" class="block font-medium mb-1">Mật khẩu</label>
+          <div class="flex gap-2">
+            <input id="login-pw" name="password" type="password" required class="w-full border border-base rounded-md px-4 py-3 text-base bg-surface" />
+            <button type="button" data-toggle-pw="login-pw" aria-label="Hiện mật khẩu" class="border border-base rounded-md px-4 text-xl">👁️</button>
+          </div>
+        </div>
+        <button type="submit" class="bg-primary text-on-primary font-semibold text-lg px-7 py-4 rounded-md w-full">Đăng nhập</button>
+        <p id="login-msg" class="text-primary font-medium" role="status" aria-live="polite"></p>
+      </form>
+      <p class="text-ink-soft mt-6">Chưa có tài khoản? <a href="#/dangky" class="text-primary font-semibold">Đăng ký ngay</a></p>
+      <div class="mt-8 border border-base rounded-md p-4 bg-surface-soft">
+        <p class="text-ink-soft">Gặp khó khi đăng nhập? <a href="#/hotro" class="text-primary font-semibold">Xem hỗ trợ khách hàng</a> hoặc gọi <a href="tel:19001234" class="text-primary font-semibold">1900 1234</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-page="#/dangky" hidden>
+    <div class="max-w-md mx-auto px-5 py-16">
+      <h1 class="text-3xl font-bold mb-2 reveal">Đăng ký</h1>
+      <p class="text-ink-soft mb-8 reveal">Tạo tài khoản để lưu lại các mẹo sống xanh yêu thích.</p>
+      <form id="signup-form" class="reveal space-y-4" novalidate>
+        <div>
+          <label for="su-email" class="block font-medium mb-1">Email</label>
+          <input id="su-email" name="email" type="email" required class="w-full border border-base rounded-md px-4 py-3 text-base bg-surface" placeholder="[email protected]" />
+        </div>
+        <div>
+          <label for="su-pw" class="block font-medium mb-1">Mật khẩu</label>
+          <div class="flex gap-2">
+            <input id="su-pw" name="password" type="password" required minlength="8" class="w-full border border-base rounded-md px-4 py-3 text-base bg-surface" />
+            <button type="button" data-toggle-pw="su-pw" aria-label="Hiện mật khẩu" class="border border-base rounded-md px-4 text-xl">👁️</button>
+          </div>
+          <p class="text-ink-soft text-sm mt-1">Ít nhất 8 ký tự.</p>
+        </div>
+        <div>
+          <label for="su-pw2" class="block font-medium mb-1">Xác nhận mật khẩu</label>
+          <div class="flex gap-2">
+            <input id="su-pw2" name="password2" type="password" required minlength="8" class="w-full border border-base rounded-md px-4 py-3 text-base bg-surface" />
+            <button type="button" data-toggle-pw="su-pw2" aria-label="Hiện mật khẩu" class="border border-base rounded-md px-4 text-xl">👁️</button>
+          </div>
+        </div>
+        <button type="submit" class="bg-primary text-on-primary font-semibold text-lg px-7 py-4 rounded-md w-full">Đăng ký</button>
+        <p id="signup-msg" class="font-medium" role="status" aria-live="polite"></p>
+      </form>
+      <p class="text-ink-soft mt-6">Đã có tài khoản? <a href="#/dangnhap" class="text-primary font-semibold">Đăng nhập</a></p>
+      <div class="mt-8 border border-base rounded-md p-4 bg-surface-soft">
+        <p class="text-ink-soft">Cần hỗ trợ khi đăng ký? <a href="#/hotro" class="text-primary font-semibold">Xem hỗ trợ khách hàng</a> hoặc gọi <a href="tel:19001234" class="text-primary font-semibold">1900 1234</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="max-w-5xl mx-auto px-5 py-14 border-t border-base mt-6">
+  <p class="text-2xl font-bold text-primary mb-2">🌿 Sống Xanh</p>
+  <p class="text-ink-soft text-sm">© 2026 Sống Xanh. Nội dung minh họa cho mục đích thiết kế.</p>
+</footer>
+
+<script src="./script/script.js"></script>
+</body>
+</html>

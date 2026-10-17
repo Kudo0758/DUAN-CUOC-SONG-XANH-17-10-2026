@@ -1,0 +1,51 @@
+:root {
+  --bg:#FFFFFF; --bg-soft:#F7F5EF; --border:#DCE5DA;
+  --ink:#20301F; --ink-soft:#44593F;
+  --primary:#2F6B46; --primary-dark:#1F4A30; --accent:#A6680B; --on-primary:#FFFFFF;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:#13201A; --bg-soft:#1C2B22; --border:#33493A;
+    --ink:#EAF1E8; --ink-soft:#B9C9B4;
+    --primary:#7FBF93; --primary-dark:#A8D9B8; --accent:#E0A94A; --on-primary:#13201A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:#13201A; --bg-soft:#1C2B22; --border:#33493A;
+  --ink:#EAF1E8; --ink-soft:#B9C9B4;
+  --primary:#7FBF93; --primary-dark:#A8D9B8; --accent:#E0A94A; --on-primary:#13201A;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body { background: var(--bg); color: var(--ink); font-size: 18px; line-height: 1.6; }
+body::before { content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:10; background:var(--bg); }
+
+.bg-surface{background:var(--bg)} .bg-surface-soft{background:var(--bg-soft)}
+.text-ink{color:var(--ink)} .text-ink-soft{color:var(--ink-soft)}
+.text-primary{color:var(--primary)} .bg-primary{background:var(--primary)}
+.bg-accent{background:var(--accent)} .text-on-primary{color:var(--on-primary)}
+.border-base{border-color:var(--border)} .border-primary{border-color:var(--primary)}
+
+:focus-visible{ outline:3px solid var(--accent); outline-offset:2px; }
+.site-header{ position:sticky; top:env(safe-area-inset-top,0px); z-index:50; }
+.nav-link[aria-current="page"]{ color:var(--primary); font-weight:700; text-decoration:underline; text-underline-offset:4px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn-primary,.btn-outline,.nav-link,.tip-card,.feat-card{ transition: background-color .15s ease, color .15s ease, border-color .15s ease, transform .2s ease, box-shadow .2s ease; }
+  .tip-card:hover,.feat-card:hover{ transform: translateY(-3px); box-shadow: 0 8px 20px -8px rgb(0 0 0 / 0.18); }
+  .reveal{ opacity:0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+  .page-out{ animation: fadeOut .2s ease forwards; }
+  .page-in{ animation: fadeIn .45s ease forwards; }
+  .leaf{ animation: sway 6s ease-in-out infinite; transform-origin: top center; }
+}
+@keyframes fadeOut{ to{ opacity:0; transform: translateY(8px);} }
+@keyframes fadeIn{ from{ opacity:0; transform: translateY(8px);} to{ opacity:1; transform:none;} }
+@keyframes sway{ 0%,100%{ transform: rotate(-5deg);} 50%{ transform: rotate(5deg);} }
+[data-page][hidden]{ display:none; }
